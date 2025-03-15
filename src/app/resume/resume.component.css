@@ -1,0 +1,149 @@
+.resume {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .profile {
+    margin-bottom: 3rem;
+  }
+  
+  .profile h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .profile h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill-category h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .skill-category ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-category li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .skill-category li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #555;
+  }
+  
+  .timeline-item {
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-item-header {
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-item-header h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .company {
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+  
+  .period {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .responsibilities {
+    padding-left: 1.5rem;
+  }
+  
+  .responsibilities li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .certification h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .certification p {
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .profile h1 {
+      font-size: 2rem;
+    }
+  
+    .profile h2 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .skills {
+      grid-template-columns: 1fr;
+    }
+  
+    .certifications {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

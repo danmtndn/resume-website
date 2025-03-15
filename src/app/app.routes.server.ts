@@ -1,8 +1,11 @@
-import { RenderMode, ServerRoute } from '@angular/ssr';
+import type { Routes } from "@angular/router"
+import { ResumeComponent } from "./resume/resume.component"
+import { ProjectsComponent } from "./projects/projects.component"
 
-export const serverRoutes: ServerRoute[] = [
-  {
-    path: '**',
-    renderMode: RenderMode.Prerender
-  }
-];
+// Server routes should match client routes
+export const serverRoutes: Routes = [
+  { path: "", component: ResumeComponent },
+  { path: "projects", component: ProjectsComponent },
+  { path: "**", redirectTo: "" },
+]
+
